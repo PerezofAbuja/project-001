@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS.css">
+    <!-- AOS CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<!-- AOS JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+  <!--navigation start-->
+    <div class="navbar bg-base-100 shadow-sm" id="nav">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+              <li><a>Home</a></li>
+              <li>
+                <details>
+                    <summary>Services</summary>
+                <ul class="p-2">
+                  <li><a>Events</a></li>
+                  <li><a>Blog</a></li>
+                  <li><a>Projects</a></li>
+                  <li><a>FAQs</a></li>
+                </ul>
+                </details>
+              </li>
+              <li><a>About us</a></li>
+              <li><a>Volunteer</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">IBW</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li>
+              <details>
+                <summary>Services</summary>
+                <ul class="p-2">
+                  <li><a>Events</a></li>
+                  <li><a>Blog</a></li>
+                  <li><a>Projects</a></li>
+                  <li><a>FAQs</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a>About us</a></li>
+            <li><a>Volunteer</a></li>
+            <li><a href="profile.html">signin</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+            <a class="btn" href="login.html">Login</a>
+        </div>
+      </div>
+  
+      <!--hero section-->
+      <!-- Slideshow container -->
+<div class="slideshow-container">
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 3</div>
+    <img src="Images/img-7.jpg" alt="picture of people" style="width:100%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 3</div>
+    <img src="Images/img-6.jpg" alt="picture of people" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 3</div>
+    <img src="Images/img-5.jpg" alt="picture of people" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<!--end of hero section-->
+      
+
+      <!-- Mission and Vision Section -->
+      <section class="mission" data-aos="zoom-out"> 
+        <div class="container">
+          <h2>Our Mission and Vision</h2>
+          <div class="content">
+            <img src="images/img-01.jpg" alt="Our Mission and Vision" class="section-image">
+            <div class="text-boxes">
+              <div class="box">
+                <h3>Our Mission</h3>
+                <p>We strive to create a better world by empowering individuals and fostering sustainable development for generations to come.</p>
+              </div>
+              <div class="box">
+                <h3>Our Vision</h3>
+                <p>To see a global community where equality, education, and opportunity are accessible to everyone.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  <!-- Impact Section -->
+  <section class="our-impact">
+    <div class="container">
+      <h2>Our Impact</h2>
+      <p class="subtitle">Together, we are making a difference.</p>
+      <div class="impact-content">
+        <div class="impact-card">
+          <img src="impact1.jpg" alt="Community Outreach">
+          <h3>Community Outreach</h3>
+          <p>Over 10,000 lives touched through education and health initiatives.</p>
+        </div>
+        <div class="impact-card">
+          <img src="impact2.jpg" alt="Environmental Projects">
+          <h3>Environmental Projects</h3>
+          <p>Restored over 500 acres of forest and raised awareness on sustainable living.</p>
+        </div>
+        <div class="impact-card">
+          <img src="impact3.jpg" alt="Youth Empowerment">
+          <h3>Youth Empowerment</h3>
+          <p>Provided scholarships and skill-building opportunities to over 1,000 young people.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Call-to-Action Section -->
+  <section class="call-to-action">
+    <div class="container">
+      <h2>Join Us in Making a Difference</h2>
+      <p>Your support can transform lives and build a better future.</p>
+      <button class="cta-button">Get Involved</button>
+    </div>
+  </section>
+  
+  <!-- About Us Section -->
+  <section class="about-us">
+    <div class="container">
+      <div class="text-content">
+        <h2>About Us</h2>
+        <p>We are a passionate team committed to driving positive change in our community and the world. Through dedication and collaboration, we strive to empower individuals and create a lasting impact.</p>
+        <p>Founded on the principles of equality and sustainability, our NGO works tirelessly to bridge gaps, inspire hope, and promote innovative solutions to global challenges.</p>
+        <button class="learn-more">Learn More</button>
+      </div>
+      <div class="image-content">
+        <img src="about-us.jpg" alt="About Us">
+      </div>
+    </div>
+  </section>
+  
+  <!-- Meet the Team Section -->
+  <section class="meet-the-team">
+    <div class="container">
+      <h2>Meet the Team</h2>
+      <p class="subtitle">The passionate individuals behind our vision.</p>
+      <div class="team-members">
+        <div class="team-card">
+          <img src="team-member1.jpg" alt="Team Member 1">
+          <h3>Jane Doe</h3>
+          <p class="role">Founder & CEO</p>
+          <p>Jane is a visionary leader with over 15 years of experience in social impact and community building.</p>
+        </div>
+        <div class="team-card">
+          <img src="team-member2.jpg" alt="Team Member 2">
+          <h3>John Smith</h3>
+          <p class="role">Operations Manager</p>
+          <p>John ensures our projects run smoothly, delivering measurable results for those we serve.</p>
+        </div>
+        <div class="team-card">
+          <img src="team-member3.jpg" alt="Team Member 3">
+          <h3>Sarah Brown</h3>
+          <p class="role">Marketing Head</p>
+          <p>Sarah drives awareness and engagement through innovative storytelling and campaigns.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!--testimonial section-->
+  <section class="testimonials-section" data-aos="fade-left">
+    <section class="testimonials">
+      <div class="container">
+        <h2>What People Are Saying</h2>
+        <p class="subtitle">Real voices from those we've impacted.</p>
+        <div class="testimonials-slider">
+          <div class="testimonial-card">
+            <p class="quote">"This NGO has transformed my life. The support and care I've received are beyond words."</p>
+            <h3>- Maria Johnson</h3>
+          </div>
+          <div class="testimonial-card">
+            <p class="quote">"Their dedication to the cause is truly inspiring. I'm proud to be part of their journey."</p>
+            <h3>- James Williams</h3>
+          </div>
+          <div class="testimonial-card">
+            <p class="quote">"The team goes above and beyond to ensure that everyone feels valued and supported."</p>
+            <h3>- Aisha Bello</h3>
+          </div>
+          <div class="testimonial-card">
+            <p class="quote">"This NGO has transformed my life. The support and care I've received are beyond words."</p>
+            <h3>- Maria Johnson</h3>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="prev">&larr;</button>
+          <button class="next">&rarr;</button>
+        </div>
+      </div>
+    </section>
+    
+  <!-- Programs Section -->
+  <section class="programs-projects">
+    <div class="container">
+      <h2>Our Programs & Projects</h2>
+      <p class="subtitle">Empowering communities through impactful initiatives.</p>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="project1.jpg" alt="Project 1">
+          <h3>Education for All</h3>
+          <p>Providing access to quality education for underprivileged children and youth.</p>
+        </div>
+        <div class="project-card">
+          <img src="project2.jpg" alt="Project 2">
+          <h3>Clean Water Initiative</h3>
+          <p>Ensuring access to safe and clean drinking water in underserved communities.</p>
+        </div>
+        <div class="project-card">
+          <img src="project3.jpg" alt="Project 3">
+          <h3>Health & Wellness</h3>
+          <p>Promoting better health through awareness, support, and medical outreach programs.</p>
+        </div>
+        <div class="project-card">
+          <img src="project4.jpg" alt="Project 4">
+          <h3>Environmental Conservation</h3>
+          <p>Protecting our planet with sustainable practices and green initiatives.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- How You Can Help Section -->
+  <section class="how-to-help">
+    <div class="container">
+      <h2>How You Can Help</h2>
+      <p class="subtitle">Your contribution makes a difference. Here's how you can support us:</p>
+      <div class="help-grid">
+        <div class="help-card">
+          <img src="donate.jpg" alt="Donate">
+          <h3>Donate</h3>
+          <p>Support our programs with a one-time or recurring donation. Every contribution counts.</p>
+          <button class="help-button">Donate Now</button>
+        </div>
+        <div class="help-card">
+          <img src="volunteer.jpg" alt="Volunteer">
+          <h3>Volunteer</h3>
+          <p>Join us as a volunteer and make a hands-on impact in your community.</p>
+          <button class="help-button">Sign Up</button>
+        </div>
+        <div class="help-card">
+          <img src="share.jpg" alt="Spread the Word">
+          <h3>Spread the Word</h3>
+          <p>Help us reach more people by sharing our mission on social media.</p>
+          <button class="help-button">Share Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Us Section -->
+  <section class="contact-us">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p class="subtitle">We would love to hear from you! Feel free to reach out.</p>
+      <div class="contact-form">
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+          </div>
+          <button type="submit" class="submit-button">Send Message</button>
+        </form>
+      </div>
+      <div class="contact-info">
+        <p><strong>Email:</strong> info@ngoexample.org</p>
+        <p><strong>Phone:</strong> +234 123 456 789</p>
+        <p><strong>Address:</strong> 123 NGO Street, Abuja, Nigeria</p>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <h2>Your NGO Name</h2>
+          <p>Creating a brighter future through passion and purpose.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#impact">Our Impact</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="#" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Your NGO Name. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+
+      <script src="JS.js"></script>
+      <script>
+        AOS.init({
+          duration: 1000, // Duration of animation in milliseconds
+          easing: 'ease-in-out', // Easing function
+          once: true // Animation will only happen once on scroll
+        });
+      </script>
+      
+</body>
+</html>
