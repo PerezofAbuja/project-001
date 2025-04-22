@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect form data
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
-    $tel = htmlspecialchars(string: $_POST['tel']);
+    $tel = htmlspecialchars(string: $_POST['phone']);
     $message = htmlspecialchars($_POST['message']);
 
     // Create a new PHPMailer instance
@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->setFrom('username@domain_name', 'sender_name');  // Replace with your email and sender name
         $mail->addAddress('receiver_mail');  // Replace with the email where you want to receive messages
         $mail->Subject = "Message from Website Contact Form";
-        $mail->Body = "Name: $name\nEmail: $email\nTel: $tel\nMessage:\n$message";
+        $mail->Body = "Name: $name\nEmail: $email\nTel: $phone\nMessage:\n$message";
 
         // Send email
         $mail->send();
