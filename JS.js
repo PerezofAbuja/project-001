@@ -51,4 +51,8 @@ window.addEventListener('scroll', () => {
   });
   
  
-  
+  //About us button action
+  document.getElementById('about-us').addEventListener('click', function(){
+    window.location.href = "/about.html";
+  });
+
