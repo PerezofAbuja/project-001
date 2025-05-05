@@ -1,7 +1,7 @@
 * {box-sizing:border-box}
 
 #nav{
-  background-color: #4CAF50;
+  
 }
 /* hero section */
 .slideshow-container {
@@ -535,7 +535,7 @@
 
 @media (max-width: 768px) {
   .meet-the-team .team-members {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 /* end of meet the team */
