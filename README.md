@@ -53,13 +53,13 @@ Technology Stack (some of these are still under process)
 
 This project is developed using modern web technologies: 
 
-Frontend: HTML, CSS, JavaScript (React.js, Bootstrap) 
+Frontend: HTML, CSS, JavaScript
 
-Backend: Node.js (Express.js) / PHP / Python (Django) 
+Backend: Node.js (Express.js) / PHP  
 
-Database: MySQL / MongoDB / PostgreSQL 
+Database: MySQL  
 
-Hosting: AWS / Heroku / Netlify 
+Hosting: SatisfyHost
 
 Payment Gateway: flutterwave (for donations) 
 

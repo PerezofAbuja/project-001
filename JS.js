@@ -53,6 +53,10 @@ window.addEventListener('scroll', () => {
  
   //About us button action
   document.getElementById('about-us').addEventListener('click', function(){
-    window.location.href = "/about.html";
+    window.location.href = "/about-us.html";
   });
 
+//volunteer button action
+document.getElementById('volunteer').addEventListener('click', function(){
+  window.location.href = "";
+});

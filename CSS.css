@@ -924,6 +924,13 @@
 }
 /* end of contact section */
 
+/* volunteer form */
+@media (max-width: 768px){
+  .volunteer-form{
+    width: 100%;
+  }
+}
+
 /* footer section */
 .site-footer body {
   font-family: 'Arial', sans-serif;
