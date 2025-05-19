@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="NGO, ijaw">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS.css">
+    <meta name="author" content="Sunday Pere Chebe A.K.A PerezofAbuja">
+    <link rel="author" href="https://www.sundaypere.com.ng">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/CSS.css">
     <!-- AOS CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <!-- AOS JavaScript -->
@@ -12,7 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>Ijawbrotherhoodworldwide-Contact us</title>
+    <title>Ijawbrotherhoodworldwide-projects/events</title>
 </head>
 <body>
     <!--navigation start-->
@@ -25,7 +29,7 @@
             <ul
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-              <li><a>Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li>
                 <details>
                     <summary>Services</summary>
@@ -37,7 +41,7 @@
                 </ul>
                 </details>
               </li>
-              <li><a>About us</a></li>
+              <li><a href="about.html">About us</a></li>
               <li><a>Volunteer</a></li>
               <li><a href="contact.html">Contact us</a></li>
             </ul>
@@ -46,7 +50,7 @@
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
-            <li><a>Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li>
               <details>
                 <summary>Services</summary>
@@ -58,8 +62,8 @@
                 </ul>
               </details>
             </li>
-            <li><a>About us</a></li>
-            <li><a>Volunteer</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="/volunteer.html">Volunteer</a></li>
           </ul>
         </div>
         <div class="navbar-end">
@@ -67,41 +71,31 @@
         </div>
       </div>
   
-     <!-- Contact Us Section -->
-  <section class="contact-us">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p class="subtitle">We would love to hear from you! Feel free to reach out.</p>
-      <div class="contact-form">
-        <form action="#" method="POST">
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-          </div>
-      
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
-          </div>
-          <button type="submit" class="submit-button">Send Message</button>
-        </form>
-      </div>
-      <div class="contact-info">
-        <p><strong>Email:</strong> worldwideijawbrotherhood@gmail.com</p>
-        <p><strong>Phone:</strong> 07035686360, 08160364575, 08140908901</p>
-        <p><strong>Address:</strong> Opposite Federal High Court Onopa Yenagoa, Bayelsa state.</p>
-      </div>
-    </div>
-    <div class="google-map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d127203.71535140027!2d6.225083528258395!3d4.920235796128332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sopposite%20federal%20highcourt%20onopa%20yenagoa%2C%20Bayelsa%20state!5e0!3m2!1sen!2sng!4v1747472178965!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-  </section>
+    <header>
+        <h1>Our Impactful Projects</h1>
+    </header>
 
-  <!-- Footer Section -->
+    <main>
+        <section id="projects">
+            <h2>Ongoing Projects</h2>
+            <div class="project-container"></div>
+        </section>
+
+        <section id="facebook" class="Timeline">
+            <h2>Latest from Our Facebook</h2>
+            <div class="fb-page" 
+                 data-href="https://www.facebook.com/profile.php?id=100063547118008"
+                 data-tabs="timeline"
+                 data-width="500"
+                 data-height="600"
+                 data-small-header="false"
+                 data-adapt-container-width="true"
+                 data-hide-cover="false"
+                 data-show-facepile="true">
+            </div>
+        </section>
+    </main>
+    <!-- Footer Section -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-top">
@@ -114,18 +108,17 @@
           <ul>
             <li><a href="/index.html">Homepage</a></li>
             <li><a href="/about-us.html">About Us</a></li>
-            <li><a href="/projects/events section.html">Programs</a></li>
-            <li><a href="/projects/events section.html">Our Impact</a></li>
             <li><a href="/volunteer.html">Volunteer</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
           </ul>
         </div>
         <div class="footer-social">
           <h3>Follow Us</h3>
           <div class="social-icons">
-            <a href="https://www.facebook.com/profile.php?id=100063547118008" target="_blank"><img src="Icons/icons8-facebook-48.png" alt="Facebook"></a>
-            <a href="#" target="_blank"><img src="Icons/icons8-twitter-48.png" alt="Twitter"></a>
-            <a href="#" target="_blank"><img src="Icons/icons8-instagram-48.png" alt="Instagram"></a>
-            <a href="#" target="_blank"><img src="Icons/icons8-linkedin-48.png" alt="LinkedIn"></a>
+            <a href="https://www.facebook.com/profile.php?id=100063547118008" target="_blank"><img src="/Icons/icons8-facebook-48.png" alt="Facebook"></a>
+            <a href="#" target="_blank"><img src="/Icons/icons8-twitter-48.png" alt="Twitter"></a>
+            <a href="#" target="_blank"><img src="/Icons/icons8-instagram-48.png" alt="Instagram"></a>
+            <a href="#" target="_blank"><img src="/Icons/icons8-linkedin-48.png" alt="LinkedIn"></a>
           </div>
         </div>
       </div>
@@ -135,6 +128,16 @@
       </div>
     </div>
   </footer>
-
+  <!--end of footer-->
+      <script src="JS.js"></script>
+        <script>
+            AOS.init({
+            duration: 1000, // Duration of animation in milliseconds
+            easing: 'ease-in-out', // Easing function
+            once: true // Animation will only happen once on scroll
+            });
+        </script>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0"></script>
+    <script src="/script.js"></script>
 </body>
 </html>

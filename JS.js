@@ -1,3 +1,16 @@
+//welcome note section
+const text = "WELCOME TO IJAW BROTHERHOOD WORLDWIDE";
+    let i = 0;
+    function typeWriter() {
+        if (i < text.length) {
+            document.getElementById("typing").textContent += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 100);
+        }
+    }
+    window.onload = typeWriter;
+
+    
 //hero section slide displays
 let slideIndex = 0;
 showSlides();
@@ -58,5 +71,5 @@ window.addEventListener('scroll', () => {
 
 //volunteer button action
 document.getElementById('volunteer').addEventListener('click', function(){
-  window.location.href = "";
+  window.location.href = "/volunteer.html";
 });

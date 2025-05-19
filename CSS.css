@@ -710,7 +710,10 @@
 
 @media (max-width: 768px) {
   .project-grid {
+    display: flex;
     flex-direction: column;
+    align-items: center; /* Ensures vertical centering */
+    justify-content: center; /* Centers horizontally */
   }
 }
 /* end of projects/programs section */
@@ -810,9 +813,13 @@
 
 @media (max-width: 768px) {
   .help-grid {
+    display: flex;
     flex-direction: column;
+    align-items: center; /* Ensures vertical centering */
+    justify-content: center; /* Centers horizontally */
   }
 }
+
 /* end of help section */
 
 /* contact section */
@@ -1055,4 +1062,54 @@
     width: 100%;
     margin-bottom: 20px;
   }
+}
+
+/* welcome note */
+.message-W {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            background-color: #041E42;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            max-width: 1500px;
+        }
+        .welcome {
+            font-size: 2.0rem;
+            font-weight: bold;
+            overflow: hidden;
+            border-right: 3px solid white;
+            white-space: normal;
+            margin: 0 auto;
+            letter-spacing: 2px;
+            display: inline-block;
+            animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: white; }
+        }
+
+        @media (max-width: 768px) {
+    .welcome {
+        font-size: 5vw; /* Scales dynamically */
+        white-space: normal; /* Allows wrapping */
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome {
+        font-size: 7vw;
+        white-space: normal;
+    }
 }
