@@ -73,3 +73,8 @@ window.addEventListener('scroll', () => {
 document.getElementById('volunteer').addEventListener('click', function(){
   window.location.href = "/volunteer.html";
 });
+
+//donate button action
+document.getElementById('donate').addEventListener('click', function() {
+  window.location.href = "/donate.html";
+});
