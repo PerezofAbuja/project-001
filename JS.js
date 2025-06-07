@@ -28,17 +28,6 @@ function showSlides() {
 }
 
 
-// Scroll Effect with JavaScript
-window.addEventListener('scroll', () => {
-    const section = document.querySelector('.mission-vision-section');
-    const sectionTop = section.getBoundingClientRect().top;
-    const triggerPoint = window.innerHeight * 0.8;
-
-    if (sectionTop < triggerPoint) {
-      section.style.animationPlayState = 'running';
-    }
-  });
-
   //automatic slider for the testimonials
   document.addEventListener('DOMContentLoaded', () => {
     const testimonials = document.querySelectorAll('.testimonial-card');
@@ -74,7 +63,39 @@ document.getElementById('volunteer').addEventListener('click', function(){
   window.location.href = "/volunteer.html";
 });
 
+
 //donate button action
 document.getElementById('donate').addEventListener('click', function() {
   window.location.href = "/donate.html";
+});
+
+function logoutUser() {
+    // Firebase logout example
+    auth.signOut().then(() => {
+        alert("Logged out successfully!");
+        window.location.href = "/index.html"; // Redirect to login page after logout
+    }).catch((error) => {
+        console.error("Logout error:", error);
+    });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    const authButton = document.getElementById("authButton");
+
+    firebase.auth().onAuthStateChanged((user) => {
+        if (user) {
+            // User is signed in
+            authButton.textContent = "Logout";
+            authButton.href = "#"; // Prevent navigation for logout
+            authButton.onclick = () => {
+                firebase.auth().signOut().then(() => {
+                    location.reload(); // Refresh page after logout
+                });
+            };
+        } else {
+            // User is signed out
+            authButton.textContent = "Signup/Login";
+            authButton.href = "signup.html"; // Redirect to signup/login
+        }
+    });
 });

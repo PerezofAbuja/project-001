@@ -53,3 +53,4 @@ document.addEventListener('DOMContentLoaded', function () {
 document.getElementById("donateBtn").addEventListener("click", function() {
     alert("Thank you for your generosity! Please use the bank details provided to make a donation.");
 });
+
